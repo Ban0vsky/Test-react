@@ -1,0 +1,1 @@
+import React, {Component} from 'react';import {NavLink} from 'react-router-dom';import './Team.css';class Team extends Component {  render() {    return (      <h1>Create Team</h1>    );  }}export default Team;

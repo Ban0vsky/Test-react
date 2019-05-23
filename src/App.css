@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 50px;
+	background: rgb(116, 36, 125);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(141, 55, 150, 0.647);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	padding: 50px;
+	/* margin-left: 209px; */
+	margin-left: 160px;
+}
+button {
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
+.loading {
+	width: 23px;
+	margin: -7px 7px;
+}
+
+.error {
+	font-weight: normal;
+	color: #999;
+}
+.capitalize {
+	margin : 0 ;
+	display: inline-block;
+	padding :0
+}
+.capitalize::first-letter {
+	text-transform: capitalize;
+	
+}
+.transparentBackground {
+	position: fixed;
+	padding-top : 150px;
+	top : 0;
+	left : 0;
+	padding-left : 80px;
+	bottom : 0;
+	width : 100%;
+	height : 100vh;
+	z-index: 10;
+	background: rgba(10, 10, 10, 0.39)
+}
+.transparentBackground section {
+	width : 30%;
+	height : 40vh;
+	margin : 0 auto;
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+
+}
+.transparentBackground section div{
+	position : absolute ; 
+	top : 50%;
+	left : 50%;
+	transform: translate(-50%,-50%);
+	font-family: Dosis;
+	text-align: center;
+
+}
+.transparentBackground section div a{
+	width : 150px;
+	display: inline-block;
+}
+.transparentBackground section div p {
+	text-align: center;
+	margin-bottom : 30px;
+}
+.transparentBackground .fas {
+	float : right;
+	margin-right : 10px;
+	margin-top : 10px;
+	color : rgb(116, 36, 125);
+	cursor : pointer;
+
+}
+@media (max-width: 1400px) {
+	main {
+		padding: 30px;
+	}
+}
+
+@media (max-width: 1178px) {
+	main {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 1046px) {
+}
+@media (max-width: 950px) {
+	main {
+		margin: 0;
+	}
+}
+
+@media (max-width: 606px) {
+	main {
+		padding: 10px;
+	}
+}
