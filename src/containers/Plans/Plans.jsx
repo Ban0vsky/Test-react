@@ -36,7 +36,8 @@ class Plans extends Component {
     if (this.state.planSelected.id > this.state.ownedPlan.id) {
       //verify if the selected plan have leadsMangement permission
       if (this.state.planSelected.permissions.indexOf('leadsManagement') > -1) {
-        window.location = '/team';
+        // window.location = '/team';
+        this.setState({finishPathPopUp: true});
       }
     } else {
       //downgrade
@@ -144,7 +145,17 @@ class Plans extends Component {
             </div>
           </PopUp>
         )}
-
+        {this.state.finishPathPopUp && (
+          <PopUp setToggle={this.handleClosePopUp}>
+            <div className="popUpError">
+              <h2 className="finish">
+               jenr samarh? ?
+                
+              </h2>
+              <img className="sadGhost" src="assets/img/0.png"alt="sadghost"/>
+            </div>
+          </PopUp>
+        )}
         {this.state.paymentConfirmPopUp &&
         this.state.planSelected && (
           <PopUp setToggle={this.handleClosePopUp}>
