@@ -30,13 +30,14 @@ class Plans extends Component {
     }
     this.setState({paymentConfirmPopUp: true, planSelected});
   };
-
+  handleRedirectTeams = () =>{
+    window.location = '/team';
+  }
   handleConfirmPurchase = async () => {
     //upgrade
     if (this.state.planSelected.id > this.state.ownedPlan.id) {
       //verify if the selected plan have leadsMangement permission
       if (this.state.planSelected.permissions.indexOf('leadsManagement') > -1) {
-        // window.location = '/team';
         this.setState({finishPathPopUp: true});
       }
     } else {
@@ -49,7 +50,8 @@ class Plans extends Component {
   handleClosePopUp = () => {
     this.setState({
       paymentConfirmPopUp: false,
-      unsubscribePopUp: false
+      unsubscribePopUp: false,
+      finishPathPopUp: false,
     });
   };
 
@@ -149,10 +151,15 @@ class Plans extends Component {
           <PopUp setToggle={this.handleClosePopUp}>
             <div className="popUpError">
               <h2 className="finish">
-               jenr samarh? ?
+               vroumvroum jmanvol
                 
               </h2>
-              <img className="sadGhost" src="assets/img/0.png"alt="sadghost"/>
+              <Button
+                       value="teambuilding sisi"
+                       className="btn"
+                       onClick={this.handleRedirectTeams}
+                     />
+              <p href="#" onClick={this.handleClosePopUp}> en fait je reste lol</p>
             </div>
           </PopUp>
         )}

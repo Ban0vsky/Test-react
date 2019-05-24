@@ -12,13 +12,13 @@
 }
 .popUpContainer section {
 
-	display: block;
+	display: inline-block;
 	position: absolute;
 	top : 50%;
 	right : 50%;
 	transform: translate(50%,-50%);
-	width : 252px;
-	height: 380px;
+	/* width : 252px;
+	height: 380px; */
 	background: #FAF8F8;
 	border: 1px solid #FAF8F8;
 	box-sizing: border-box;
@@ -26,8 +26,9 @@
     border-radius: 2px;
 	font-size: 20px;
 	font-family: Dosis;
-
-
+	padding-right:2px;
+	padding-bottom: 10px;
+    padding-top: 15px;
 }
 .popUpContainer section h3{
 	color :#513e69;
@@ -42,12 +43,12 @@
 }
 
 .popUpContainer .content{
-  position  : absolute;
+  display: inline;
   top : 50%;
   left : 50%;
   transform: translate(-50%,-50%);
   color : #333;
-  width: 100%;
+  /* width: 100%; */
   /* height: 100%; */
 }
 .popUpContainer .content::first-letter{

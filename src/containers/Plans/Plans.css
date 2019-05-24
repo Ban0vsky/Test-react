@@ -148,14 +148,14 @@
 }
 
 .subscription .offers article small {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: dosis;
 	margin-left: 25px;
 	margin-top: 14px;
 	color: #3A3A3A;
 }
 .subscription .offers article small div{
-	font-size: 16px;
+	font-size: 14px;
 	font-family: dosis;
 	margin-top: 11px
 }
@@ -181,8 +181,8 @@
 	margin-top: 10px;
 }
  .popUpError {
-	width : 95% !important;
-	height: 95% !important;
+	width : 249px !important;
+	/* height: 95% !important; */
 }
 
 .popUpError h2{
@@ -191,6 +191,7 @@
 	margin-top: 5px;
 	font-weight: 200;
 	margin-left: 28px;
+	margin-right: 0px
 
 }
  .popUpError p {
