@@ -114,13 +114,13 @@ class Plans extends Component {
                    (
                      this.state.ownedPlan.id > plan.id ?(
                      <Button
-                       value="downgrade"
+                       value="Downgrade"
                        className="btn"
                        onClick={() => this.handleSelectPlan(plan, false)}
                      />
                      ):
                      <Button
-                       value="upgrade"
+                       value="Upgrade"
                        className="btn"
                        onClick={() => this.handleSelectPlan(plan, false)}
                      />
@@ -135,12 +135,16 @@ class Plans extends Component {
           <PopUp setToggle={this.handleClosePopUp}>
             <div className="popUpError">
               <h2 className="unsubscribeText">
-                Êtes-vous sur de vouloir supprimer votre abonnement ?
-                
+                Êtes-vous sûr ?
               </h2>
-              <img className="sadGhost" src="assets/img/0.png"alt="sadghost"/>
+              <p>
+                 Cette opération est irréversible.
+              </p>
+              <p>
+                 Vous devrez vous réabonner pour à nouveaux profiter de nos services.
+              </p>
               <Button
-                className="btn"
+                className="btn unsubButton"
                 value="Se désabonner"
                 onClick={this.handleUnsubscribe}
               />
@@ -151,15 +155,15 @@ class Plans extends Component {
           <PopUp setToggle={this.handleClosePopUp}>
             <div className="popUpError">
               <h2 className="finish">
-               vroumvroum jmanvol
-                
+               Kaspr vous remercie pour votre abonnement.
               </h2>
+              <p>Pour utiliser votre abonnement au maximum de ses capacités, vous pouvez commencer en créant une team!</p>
               <Button
-                       value="teambuilding sisi"
+                       value="Créer une team"
                        className="btn"
                        onClick={this.handleRedirectTeams}
                      />
-              <p href="#" onClick={this.handleClosePopUp}> en fait je reste lol</p>
+              <p className="cancelTeam" onClick={this.handleClosePopUp}>Non merci, une autre fois</p>
             </div>
           </PopUp>
         )}

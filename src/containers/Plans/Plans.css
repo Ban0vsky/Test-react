@@ -196,10 +196,11 @@
 }
  .popUpError p {
 	margin-left: 28px;
-	font-size: 14px;
+	font-size: 15px;
 	margin-bottom : 10px;
 	font-weight: normal;
 	margin-top: 0px;
+	color: #3A3A3A;
 }
 
 .popUpError .priceConf {
@@ -211,11 +212,15 @@
 .popUpError strong{
 	color: #AD2965;
 }
-.sadGhost{
-	margin: 0px 0px 0px 25px;
-}
 .unsubscribeText{
-	font-size:16px;
-	margin: 0px 0px 0px 0px !important;
-	text-align: center
+	color: #EB5757 !important;
+	text-align: center;
+}
+.cancelTeam{
+	color:#858585 !important;
+	cursor: pointer;
+	margin-left: 55px !important;
+}
+.finish{
+	font-size: 22px !important;
 }
