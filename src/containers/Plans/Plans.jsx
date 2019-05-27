@@ -81,11 +81,11 @@ class Plans extends Component {
                     <strong> {plan.price}</strong>€/mois
                   </p>
                   <span>
-                            {plan.credit} credits/mois
-                            {plan.permissions.indexOf('bulks') >-1 && (<div>Accès aux Bulks</div>)}
-                            {plan.permissions.indexOf('leadsManagement') >-1 && (<div>Leads management</div>)}
-                            {plan.permissions.indexOf('leadsExport') >-1 && (<div>Leads exports</div>)}
-										</span>
+                    {plan.credit} credits/mois
+                    {plan.permissions.indexOf('bulks') >-1 && (<div>Accès aux Bulks</div>)}
+                    {plan.permissions.indexOf('leadsManagement') >-1 && (<div>Leads management</div>)}
+                    {plan.permissions.indexOf('leadsExport') >-1 && (<div>Leads exports</div>)}
+									</span>
                   <small>
                     Jusqu'a {plan.limitShare + 1} utilisateur{' '} 
                     {plan.permissions.indexOf('bulks') == -1 && (<div>Pas d'accès aux Bulks</div>)}
