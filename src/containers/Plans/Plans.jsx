@@ -81,8 +81,6 @@ class Plans extends Component {
                     <strong> {plan.price}</strong>€/mois
                   </p>
                   <span>
-											{/* <img src="assets/img/addcoin.svg"
-                           alt="coin"/> */}
                             {plan.credit} credits/mois
                             {plan.permissions.indexOf('bulks') >-1 && (<div>Accès aux Bulks</div>)}
                             {plan.permissions.indexOf('leadsManagement') >-1 && (<div>Leads management</div>)}

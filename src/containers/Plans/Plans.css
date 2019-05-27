@@ -39,8 +39,7 @@
 	flex-flow: row wrap;
 	justify-content: center;
 }
-.subscription .offers > * {
-}
+
 .subscription .offers > div {
 	position: relative;
 	margin: 10px;
@@ -64,13 +63,11 @@
 	height: 380px;
 }
 .subscription .offers article {
-	/* padding: 17px 5px; */
 	height: 380px;
 	position: relative;
 	font-family: Dosis;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	background: #FAF8F8;
 	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 	border-radius: 2px;
@@ -129,9 +126,7 @@
 	font-size: 20px;
 	font-weight: 100;
 }
-/* .subscription .offers article> span div{
-	height: 60px
-} */
+
 .subscription .offers .btnSelected {
 	padding: 10px 30px;
 	color: #ad2965;
@@ -182,7 +177,6 @@
 }
  .popUpError {
 	width : 249px !important;
-	/* height: 95% !important; */
 }
 
 .popUpError h2{
